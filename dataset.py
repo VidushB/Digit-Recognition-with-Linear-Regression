@@ -1,8 +1,6 @@
 import csv
 import numpy as np
 from sklearn.model_selection import train_test_split
-from sklearn.linear_model import LogisticRegression
-from sklearn import metrics
 
 my_data = np.genfromtxt(filepath, delimiter=',',skip_header=True)
 labels=my_data[:,0] # First column of dataset contains MNIST labels
